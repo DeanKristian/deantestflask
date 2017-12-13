@@ -12,4 +12,4 @@ def index():
 @app.route('/post_user', methods=['POST'])
 def post_user():
     User(request.form['username'], request.form['email'])
-    return redirect(url_for(index))
+    return redirect(url_for('index'))
