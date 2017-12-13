@@ -11,5 +11,5 @@ def index():
 
 @app.route('/post_user', methods=['POST'])
 def post_user():
-    User(request.form['username'], request.form['email'])
+    User(request.form['username'], request.form['password'])
     return redirect(url_for('index'))
