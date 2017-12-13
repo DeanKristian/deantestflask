@@ -6,7 +6,7 @@ from models import User
 @app.route('/')
 def index():
     myUser = User.query.all()
-    return render_template('index.html', t_myUser=myUser)
+    return render_template('index.html', myUser=myUser)
 
 
 @app.route('/post_user', methods=['POST'])
