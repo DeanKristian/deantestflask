@@ -16,8 +16,9 @@
         <input type="submit" value="Login">
     <br>
     </form>
-    <button>Create Account</button>
-
+    <form action="/CreateUser">
+    <input type="submit" value="Create Account" />
+    </form>
     {% for user in myUser %}
         <li>{{ user.username }} - {{ user.email }}</li>
     {% endfor %}
