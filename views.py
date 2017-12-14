@@ -27,3 +27,7 @@ def post_user():
 @app.route('/user_page')
 def user_page():
     return render_template('usermain.html')
+
+@app.route('/CreateUser')
+def create_user():
+    return render_template('CreateUser.html')
